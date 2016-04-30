@@ -1,28 +1,12 @@
-jekyll-angular-firebase
-=======================
+#Demo: Search a Jekyll Blog with Azure Search
 
-Base template for a web app using the Jekyll-Angular-Firebase (JAF) stack.
+This is a demo of how to index a Jekyll blog for free with Azure Search and how to search it with client-side JavaScript.
 
-Click [here](http://maxhorstmann.github.io/jekyll-angular-firebase) to see it in action.
+* `jekyll-rss-feed` - Liquid template to generate an RSS feed of all posts on a Jekyll blog
+* `node-upload-script` - script to import the blog RSS to Azure Search
+* `www` - sample search page (searches [anthonychu.ca](http://anthonychu.ca))
 
-So, what's the JAF stack?
+Full article explaining the process is here:
 
-* [Jekyll](http://jekyllrb.com) is a static site generator. In the JAF stack, we're using it mostly to 
-generate static navigation elements on every page of our web site.
-
-* [Angular](https://angularjs.org) is a client-site MVC framework. Actually, there are at least two versions 
-of Angular: the very popular AngularJS for JavaScript, and the lesser known [AngularDart](https://angulardart.org).
-For this template, we're using AngularJS to implement all the business logic (which runs client-side).
-
-* [Firebase](https://www.firebase.com) is a commercial real-time storage and synchronization service. Firebase
-is acting as the data store in the JAF stack.
-
-Note what's missing? **There's no backend code.** That's the whole point. All the "logic" lives in Angular, which runs client-side. All the data 
-plus the security model and some basic validation rules live in Firebase. 
-
-Note that the template currently uses Bootstrap for UI stuff, which again requires jQuery. That's more 
-optional though, they can easily be replaced with any other UI framework or no UI framework.
-
-
-
+> [Add Search to a Jekyll Blog for Free with Azure Search](http://anthonychu.ca/post/add-search-to-jekyll-blog-free-azure-search)
 
